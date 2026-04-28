@@ -94,6 +94,7 @@ function Get-EnvironmentAliases {
   switch ($Environment) {
     "automation" { return @("production", "local") }
     "development" { return @("development", "local") }
+    "local" { return @("local", "development") }
     default { return @($Environment) }
   }
 }
