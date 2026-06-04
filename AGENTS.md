@@ -2,6 +2,26 @@
 
 This repo owns portfolio operations, docs, and cross-repo checks. It should inspect sibling repos without mutating them unless Toni explicitly transfers ownership for that repo.
 
+## Global Standing Rules
+
+These rules apply to every repo in this workspace. Full canonical versions are in `~/.claude/CLAUDE.md`.
+
+**Deep Questioning (permanent, all projects):** Before any design, build, architecture, or process work — ask deeply. Run multiple rounds of clarifying questions before implementing. Never substitute "seemed clear from context" for stated answers.
+
+**Always Show File Paths:** Every file, rendered page, or generated artifact must include its exact Windows path in the response text, every time.
+
+**Framework Freedom:** Never default to any framework, library, or toolchain without a stated reason.
+
+**Limitations Check:** Before any new approach, technique, or tool — state ceiling / failure mode / best practice / alternatives / verdict first.
+
+**Truthful Reporting:** Separate what was implemented, verified, deployed, and what remains.
+
+**Durable Rule Persistence:** When a new rule is established, immediately update CLAUDE.md + relevant AGENTS.md + session memory + Codex memory.
+
+**Context Transparency:** Proactively state context limits. Training cutoff is August 2025 — flag when knowledge of a toolchain, library, or platform may be outdated. Do not silently work around missing or compacted context.
+
+**Anti-Lazy Execution:** Never default to the convenient or easy path. When a proper approach exists — established workflow, right tool, full process — use it. If a proper path is blocked, state why and find the right alternative. Never approximate.
+
 ## Operating Rules
 
 - Keep portfolio automation in this repo, not in Hub runtime code.
